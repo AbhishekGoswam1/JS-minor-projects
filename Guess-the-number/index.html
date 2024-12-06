@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 </head>
-<body>
-    <figure></figure>
+<body>  
+    <div id="container">
+      <h1>Number guessing game</h1>
+        <ul class="inst">
+            <li>Try and guess a random number between 1 and 20.</li>
+            <li>You have 5 attempts to guess the right number.</li>
+        </ul>
+        <p class="gd-luck">Good luck!</p>
+        <form class="form">
+            <label2 for="guessField" id="guess">Guess a number</label>
+            <div class="inputs">
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" id="submit" value="Submit guess" class="guessSubmit">
+            </div>
+        </form>
+
+    <div class="resultPara">
+        <p class="result">Previous Guesses: <span class="guesses"></span></p>
+        <p class="result">Guesses Remaining: <span class="lastResult">5</span></p>
+        <p class="lowOrHi"></p>
+    </div>
+    <div class="info">
+        <p class="link">Created by <a href="https://github.com/AbhishekGoswam1">Abhishek</a></p>
+    </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

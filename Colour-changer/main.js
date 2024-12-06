@@ -18,7 +18,7 @@ button.forEach(function (button) {
     if (event.target.id === 'black') {
       body.style.backgroundColor = 'black';
       document.querySelector('.h1').style.color = 'white';
-      document.querySelector('.h2').style.color = 'white';
+      document.querySelector('.h2').style.color = 'green';
     }
     if (event.target.id === 'red') {
       body.style.backgroundColor = event.target.id;
